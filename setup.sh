@@ -137,7 +137,7 @@ Restart=always
 User=root
 
 [Install]
-WantedBy=multi-user.target" | sudo tee /etc/systemd/system/fileless.service
+WantedBy=multi-user.target" | sudo tee /etc/systemd/system/fileless.service > /dev/null
 sudo systemctl enable fileless.service
 sudo systemctl start fileless.service
 sudo apt-get update
